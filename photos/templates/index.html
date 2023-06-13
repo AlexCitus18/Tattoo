@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+{% load static %}
+{% load filter%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline tattoo</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/adaptiv.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+
+<header>
+
+    <div class="header__container">
+        <a href="#" class="header__logo"><img src="{% static 'img/Лого.svg'%}" alt=""></a>
+
+        <div class="header__menu menu">
+            <div class="menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#about" class="menu__link">о нас</a></li>
+                    <li class="menu__item"><a href="#price" class="menu__link">прайс</a></li>
+                    <li class="menu__item"><a href="#masters" class="menu__link">мастера</a></li>
+                    <li class="menu__item"><a href="#gallery" class="menu__link">работы</a></li>
+                    <li class="menu__item"><a href="#contact" class="menu__link">контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__location"><p>Ростов-на-Дону, Газетный пер., 55а</p></div>
+    </div>
+
+</header>
+
+<main>
+    <section class="first_screen">
+        <div class="first_screen__block _conteiner">
+            <div class="fs_left">
+                <div class="fs_left__name">
+                    <h1>Tattoo</h1>
+                    <h2>- здесь оживают ваши мечты !</h2>
+                    <p>Запишись к нам на <span>бесплатную консультацию</span> и получи <span>скидку 15%</span> на первый
+                        сеанс тату</p>
+                    <a href="">Записаться</a>
+                </div>
+
+                <div class="fs_left__contact">
+                    <p>Вы можете свяваться с нами по телефону</p>
+                    <p>+7 (989) 535-98-75</p>
+                </div>
+            </div>
+            <div class="fs_reight"><img src="{% static 'img/tatto_b1.png'%}" alt=""></div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="about__block _conteiner">
+            <div class="ab_img"><img src="{% static 'img/тату-краска.png'%}" alt=""></div>
+
+            <div class="about__block_content">
+
+                <div>
+                    <div class="ab_title">
+                        <h2>Кто мы</h2>
+                    </div>
+
+                    <div class="ab_text">
+                        <p>Тату-салон расположенный в самом центре города Ростове-на-Дону "Outline tatto" - это не
+                            только команда профессиональных мастеров с многолетним опытом и качественным портфолио, но и
+                            комфортный салон, где мы предложим отдохнуть между сеансами и включить вашу любимую
+                            музыку.</p>
+                        <br>
+                        <p>Для нас нанесение татуировок - особое художественное искусство, поэтому в каждую работу мы
+                            вкладываем душу.</p>
+                    </div>
+                </div>
+
+                <div class="ab_facts">
+                    <div class="ab_fact"><span>> 1000</span><span>довольных клиентов</span></div>
+                    <div class="ab_fact"><span>> 200</span><span>реальных отзывов</span></div>
+                    <div class="ab_fact"><span>12</span><span>мастеров</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="reason_block3 _conteiner">
+            <div class="reason_b3__title">
+                <h2>Почему клиенты выбирают нас</h2>
+            </div>
+
+            <div class="reason_b3__cards">
+                <div class="reason__card">
+                    <div class="card_img"><img src="{% static 'img/безопасность.svg'%}" alt=""></div>
+                    <h3>Безопасность</h3>
+                    <p>Предоставляем заживляющую пленку и обезбаливающую мазь</p>
+                </div>
+                <div class="reason__card">
+                    <div class="card_img"><img src="{% static 'img/качество.svg'%}" alt=""></div>
+                    <h3>Качество</h3>
+                    <p>Создадим тату с учетом индивидуальных потребностей клиента</p>
+                </div>
+                <div class="reason__card">
+                    <div class="card_img"><img src="{% static 'img/мастера.svg'%}" alt=""></div>
+                    <h3>Мастера</h3>
+                    <p>Тату-мастера с опытом более 5 лет, которые регулярно повышают уровень мастерства</p>
+                </div>
+                <div class="reason__card">
+                    <div class="card_img"><img src="{% static 'img/красители.svg'%}" alt=""></div>
+                    <h3>Безопасные красители</h3>
+                    <p>Мы используем стойкие красители соответствующие всем гигиеническим требованиям</p>
+                </div>
+                <div class="reason__card">
+                    <div class="card_img"><img src="{% static 'img/материалы.svg'%}" alt=""></div>
+                    <h3>Материалы</h3>
+                    <p>Сертифицированное зарубежное оборудование и стерильные одноразовые расходники</p>
+                </div>
+                <div class="reason__card">
+                    <div class="card_img"><img src="{% static 'img/комфорт.svg'%}" alt=""></div>
+                    <h3>Комфорт</h3>
+                    <p>У нас вы можете выпить чай, кофе, и посмотрель свой любимый фильм или музыку во время сеанса</p>
+                </div>
+                <div class="reason__card">
+                    <div class="card_img"><img src="{% static 'img/локация.svg'%}" alt=""></div>
+                    <h3>Местоположение</h3>
+                    <p>Студия находится в самом центре города, 5 мин от ул. Большая Садовая</p>
+                </div>
+                <div class="reason__card">
+                    <div class="card_img"><img src="{% static 'img/связь.svg'%}" alt=""></div>
+                    <h3>Обратная связь</h3>
+                    <p>Мы поддерживаем обратную связь с клиентом на всех этапах создания тату</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="masters">
+        <div class="masters_block4 _conteiner">
+            <div class="masters_b4__title">
+                <h2>Мастера</h2>
+            </div>
+
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    {%for artist in artists %}
+                    <li class="card">
+                        <div class="img"><img src="{{artist.image.url}}" alt="img" draggable="false"></div>
+                        <h2>{{artist.first_name}} {{artist.last_name}}</h2>
+                        <p>{{artist.description}}</p>
+                        <!-- <span>Тату-мастер</span> -->
+                    </li>
+                    {%endfor%}
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="price__screen" id="price">
+        <div class="price _conteiner">
+
+            <h2 class="price_title">Прайс</h2>
+
+            <div class="price_table">
+                {% for category in categories_service%}
+                {% if forloop.counter|service_blocks %}
+                <div class="price__content reight">
+
+                    <div class="price__card">
+
+                        <h3 class="card__title">{{category}}</h3>
+                        {%for service in category.service_set.all%}
+                        <div class="card__line">
+                            <p>{{service.name}}</p>
+                            <hr>
+                            <p>
+                                {%if service.price > 0%}
+                                {{service.price}} ₽
+                                {%else%}
+                                Бесплатно
+                                {%endif%}
+                            <div>{{service.description}}</div>
+                            </p>
+                        </div>
+                        {%endfor%}
+                    </div>
+                </div>
+                {%else%}
+                <div class="price__content left">
+
+                    <div class="price__card">
+
+                        <h3 class="card__title">{{category}}</h3>
+                        {%for service in category.service_set.all%}
+                        <div class="card__line">
+                            <p>{{service.name}}</p>
+                            <hr>
+                            <p>
+                                {%if service.price > 0%}
+                                {{service.price}} ₽
+                                {%else%}
+                                Бесплатно
+                                {%endif%}
+                            <div>{{service.description}}</div>
+                            </p>
+                        </div>
+                        {%endfor%}
+                    </div>
+                </div>
+                {%endif%}
+                {%endfor%}
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="_conteiner">
+            <div class="FAQ-title">
+                <h2>FAQ</h2>
+            </div>
+            <div class="FAQ">
+                <div class="FAQ-accordion">
+                    <div class="accordion">
+                        <div data-tab="tab-1" class="accordion__title">
+                            <h3>Как рассчитывается стоимость тату?</h3>
+                            <span></span>
+                        </div>
+                        <div id="tab-1" class="accordion__content">
+                            Стоимость татуировки складывается из следующих факторов, таких как
+                            размер изображения, область нанесения рисунка,
+                            сложность эскиза, стиль татуировки, количество сеансов для
+                            завершения работы.<br><br>Окончательную стоимость татуировки можно узнать только после
+                            личной встречи – консультации с мастером.
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div data-tab="tab-2" class="accordion__title">
+                            <h3>Как мне подготовиться к сеансу?</h3>
+                            <span></span>
+                        </div>
+                        <div id="tab-2" class="accordion__content">
+                            Есть несколько простых правил которые позволяют максимально комфортно
+                            чувствовать себя в процессе нанесения татуировки:<br><br>
+                            <ol>
+                                <li> За сутки до сеанса начните пить воду в достаточных количествах и не допускайте
+                                    обезвоживания вашего организма.
+                                </li>
+                                <br>
+                                <li> Если у вас сухая кожа, за неделю до сеанса начните использовать увлажняющий крем.
+                                </li>
+                                <br>
+                                <li> Наденьте максимально удобную одежду свободного кроя. Одежда должна быть комфортной
+                                    и обеспечивать прямой доступ к области нанесения рисунка.
+                                </li>
+                                <br>
+                                <li> Перед сеансом татуировки очень важно плотно поесть. Голод в сочетании с волнением
+                                    не лучший вариант.
+                                </li>
+                                <br>
+                                <li> За сутки до сеанса не употребляйте алкоголь и избегайте физических нагрузок.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div data-tab="tab-3" class="accordion__title">
+                            <h3>На сколько это больно?</h3>
+                            <span></span>
+                        </div>
+                        <div id="tab-3" class="accordion__content">
+                            Зачастую болезненные ощущения сильнее выражены в начале процесса нанесения, первые 10–15
+                            минут,
+                            потом тело привыкает и ближайшие часа три достаточно спокойно переносит процесс
+                            травматизации кожи.
+                            Поэтому сеанс обычно не длится дольше четырёх часов, хотя всё индивидуально и зависит от
+                            вашего болевого,
+                            места нанесения и общего состояния организма.<br><br>
+
+                            Доверте процесс нанесения тату нам и мы в свою очередь сделаем все для того, чтобы вы
+                            чувствовали
+                            себя комфортно.
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div data-tab="tab-4" class="accordion__title">
+                            <h3>Можно сделать перерыв во время сеанса?</h3>
+                            <span></span>
+                        </div>
+                        <div id="tab-4" class="accordion__content">
+                            Да, зачастую один сеанс татуировки может длиться по времени до 4-х часов и большие по
+                            площади эскизы выполняются
+                            за несколько сеансов. Перерыв между ними должен составлять как минимум 5-10 дней.
+                            Но вы можете попросить мастера сделать перерыв во время сеанса и передохнуть, за
+                            дополнительное время мы не взымаем плату.
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div data-tab="tab-5" class="accordion__title">
+                            <h3>Есть ли возрастные ограничения?</h3>
+                            <span></span>
+                        </div>
+                        <div id="tab-5" class="accordion__content">
+                            Тату можно делать строго с 18 лет, когда человек является совершеннолетним и уже несет
+                            полную правовую ответственность за свои поступки и действия. Кроме того,
+                            к 18-ти годам завершается процесс активного роста тела, поэтому уменьшается
+                            вероятность деформации татуировки с возрастом.
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div data-tab="tab-6" class="accordion__title">
+                            <h3>Зачем нужна коррекция татуировки?</h3>
+                            <span></span>
+                        </div>
+                        <div id="tab-6" class="accordion__content">
+                            Первичная коррекция татуировки после заживления необходима практически всегда,
+                            в особенности, когда речь идет о цветных тату или сложных рисунках.
+                            Каким бы высококлассным специалистом не был мастер, и с каким бы современным
+                            оборудованием он не работал, особенности кожи таковы, что после заживления
+                            тату пигмент может выпадать.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+
+            <div class="gallery-title">
+                <h2>Наши работы</h2>
+                <h3>Выберите интересующее вас направление</h3>
+            </div>
+
+            <div class="gallery-filter">
+                <span class="filter-item active" data-filter="all">ALL</span>
+                {%for category in categories %}
+                <span class="filter-item">{{category.name}}</span>
+                {%endfor%}
+            </div>
+
+            <div class="row">
+                {% for photo in photos %}
+                <div class="gallery-item new_school">
+                    <div class="gallery-item-inner">
+                        <img src="{{photo.image.url}}" alt="new_school">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="form container">
+            <div class="gallery-title">
+                <h2>Бесплатная консультация</h2>
+                <h3>Оставте заявку прямо сейчас и мы свяжемся с вами<br>в ближайшее время</h3>
+            </div>
+
+            <form action="{% url 'consultations' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input name="name" type="text" placeholder="Имя"/>
+                <input name="phone" type="tel" placeholder="+7(777) 777-77-77"/>
+
+                <div class="choice">
+
+                    <h3>предпочтительный способ связи</h3>
+
+                    <div>
+                        <input type="checkbox" id="choice-1" name="call_back">
+                        <input type="hidden" name="call_back1" value="перезвонить">
+                        <label for="choice-1">мы вам перезвоним</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="choice-2" name="whats_app">
+                        <input type="hidden" name="whats_app1" value="whats app">
+                        <label for="choice-2">мы напишем в whats app</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="choice-3" name="telegram">
+                        <input type="hidden" name="telegram1" value="telegram">
+                        <label for="choice-3">мы напишем в telegram</label>
+                    </div>
+
+                    <h3 id="form-file">Прикрепите файлом эскиз желаемой татуировки</h3>
+
+                    <input name="file" type="file" id="input__file" class="input__file" accept=".jpg, .png" multiple>
+                    <label for="input__file" class="input__file-button">
+                        <span class="input__file-icon-wrapper"><img src="{%static 'img/download.svg'%}"
+                                                                    alt="Выбрать файл"></span>
+                        <span class="input__file-button-text">Выбрать файл</span>
+                    </label>
+
+                </div>
+
+                <button type="submit">Записаться</button>
+
+                <p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь c
+                    <a title="Правила политики конфиденциальности сайта" href="#" id="link-form">политикой
+                        конфиденциальности</a>
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+    <div class="running_line">
+        <p class="running_line_marquee">Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - Outline
+            Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio -</div>
+    </div>
+
+    <section id="contact">
+        <div class="contact__block _conteiner">
+            <div class="contact__block_left">
+
+                <h2>Контакты</h2>
+
+                <div class="contact_content">
+                    <div class="contact_info">
+                        <div>Ростов-на-Дону, Газетный пер., 55а</div>
+                        <div>
+                            <div class="contact_info-row">
+                                <span>Понедельник - Пятница</span>
+                                <span>9:00 - 23:00</span>
+                            </div>
+                            <div class="contact_info-row">
+                                <span>Суббота - Воскресенье</span>
+                                <span>9:00 - 21:00</span>
+                            </div>
+                            <div class="contact_info-row"></div>
+                        </div>
+                        <div>+7 (989) 535-98-75</div>
+                    </div>
+
+                    <h3>Дополнительную информацию о нас<br>Вы можете узнать в социальных сетях</h3>
+
+                    <div class="footer__socials">
+                        <a class="social_inst" href="#"><img src="../../../../Otline_tattoo/img/inst.svg" alt=""></a>
+                        <a class="social_vk" href="#"><img src="../../../../Otline_tattoo/img/vk.svg" alt=""></a>
+                        <a class="social_tgm" href="#"><img src="../../../../Otline_tattoo/img/tg.svg" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps/org/outline_tattoo/219580088628/?utm_medium=mapframe&utm_source=maps"
+                   style="color:#eee;font-size:12px;position:absolute;top:0px;">Outline Tattoo</a><a
+                    href="https://yandex.ru/maps/39/rostov-na-donu/category/tattoo_studio/184105820/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Тату-салон в Ростове‑на‑Дону</a><a
+                    href="https://yandex.ru/maps/39/rostov-na-donu/category/piercing_studio/30981681208/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:28px;">Пирсинг-салон в Ростове‑на‑Дону</a>
+                <iframe src="https://yandex.ru/map-widget/v1/?l=night&ll=39.713019%2C47.223355&mode=search&oid=219580088628&ol=biz&z=17"
+                        width="560" height="400" frameborder="1" allowfullscreen="true"
+                        style="position:relative;"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+
+    <nav class="footer__navi container">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#about" class="menu__link">о нас</a></li>
+            <li class="menu__item"><a href="#price" class="menu__link">прайс</a></li>
+            <li class="menu__item"><a href="#masters" class="menu__link">мастера</a></li>
+            <li class="menu__item"><a href="#gallery" class="menu__link">работы</a></li>
+            <li class="menu__item"><a href="#contact" class="menu__link">контакты</a></li>
+        </ul>
+    </nav>
+    <div class="footer__copy container">&copy; Outline tattoo, 2023. Все права защищены.</div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.filter-item').click(function (e) {
+            const filterContainer = document.querySelector(".gallery-filter");
+            filterContainer.querySelector(".active").classList.remove("active");
+            e.target.classList.add("active");
+            $.ajax({
+                data: {
+                    'active': e.currentTarget.innerHTML
+                },
+                type: 'GET',
+                url: "{% url 'photos' %}",
+                success: function (response) {
+                    $('.row').empty();
+                    var content = "";
+                    for (var key in response.photos) {
+                        content = content + "<div className='gallery-item new_school'>" +
+                            "<div className='gallery-item-inner'>" +
+                            "<img style='width: 300px;height: 300px' src='" + response.photos[key].image + "' alt='new_school'>" +
+                            "</div>" +
+                            "</div>";
+                    }
+                    $('.row').append(content);
+                },
+                error: function (response) {
+                    alert('error')
+                }
+            });
+            return false;
+        });
+    });
+</script>
+<script src="{%static 'js/script.js'%}"></script>
+</body>
+</html>
